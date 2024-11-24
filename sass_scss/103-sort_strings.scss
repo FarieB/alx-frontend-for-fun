@@ -1,12 +1,11 @@
-/* Task: Sort a list and print the result */
+/* Task: Sort a list and print each name in the debug output */
+
 $list_to_sort: john anna zoe kim felicia carrie;
 
-// Function to sort the list
-@function sort-list($list) {
-  @return join(nth($list, 1), sort(nth($list, 2) ...), comma);
-}
-
-// Sort the list and print the result
+// Sort the list
 $sorted_list: sort($list_to_sort);
 
-@debug $sorted_list;
+// Print each name in the sorted list
+@each $name in $sorted_list {
+  @debug $name;
+}
