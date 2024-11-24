@@ -1,0 +1,14 @@
+/* Task: Assign text colors using imported variables */
+@import '10-colors';
+
+.red {
+  color: $red;
+}
+
+.green {
+  color: $green;
+}
+
+.blue {
+  color: $blue;
+}
