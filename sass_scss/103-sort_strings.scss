@@ -1,11 +1,3 @@
-/* Task: Sort a list and print each name in the debug output */
-
-$list_to_sort: john anna zoe kim felicia carrie;
-
-// Sort the list
 $sorted_list: sort($list_to_sort);
 
-// Print each name in the sorted list
-@each $name in $sorted_list {
-  @debug $name;
-}
+@debug $sorted_list;
