@@ -1,7 +1,11 @@
+// This file styles the button text color and its hover state using nested declarations
+// Initial text color: #FF0000
+// Hover text color: #00FF00
+
 button {
-  color: #FF0000;
+  color: #FF0000; // Set the initial text color
   
   &:hover {
-    color: #00FF00;
+    color: #00FF00; // Change text color on hover
   }
 }
